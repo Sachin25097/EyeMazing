@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Eye Exam</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fc;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .booking-container {
+      background-color: #fff;
+      padding: 2rem 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 450px;
+      width: 100%;
+    }
+
+    .booking-container h2 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #1a1a1a;
+    }
+
+    .booking-form input,
+    .booking-form textarea,
+    .booking-form button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .booking-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .booking-form button {
+      background-color: #0a3d62;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .booking-form button:hover {
+      background-color: #07507a;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 1rem;
+      text-align: center;
+      color: #0a3d62;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="booking-container">
+    <h2>Book Your Eye Exam</h2>
+    <form class="booking-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="date" required>
+      <input type="time" required>
+      <textarea placeholder="Additional notes (optional)"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <a href="index.html" class="back-link">&#8592; Back to Home</a>
+  </div>
+</body>
+</html>
